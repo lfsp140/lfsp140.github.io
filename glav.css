@@ -1,0 +1,289 @@
+* {
+  margin: 0px;
+  line-height: 1.45;
+  box-sizing: border-box;
+}
+body {
+  min-width: 375px;
+  min-height: 100vh;
+  --bg-color: #f2eae4;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.light {
+  --bg-color: #f2eae4;
+  --b-color: #626262;
+  --text-color: black;
+  --t-b-color: white;
+}
+.dark {
+  --bg-color: #484848;
+  --b-color: #ebebeb;
+  --text-color: white;
+  --t-b-color: black;
+}
+header {
+  width: 78%;
+  text-align: center;
+  margin: auto;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  border-bottom: solid 4px;
+  border-bottom-color: var(--text-color);
+  gap: 5rem;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: monospace;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 11px
+}
+.menu {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.ss {
+  color: var(--text-color);
+}
+.g {
+  display: grid;
+  grid-template-columns: 88% 12%;
+  margin: 1% 11% 0% 11%;
+}
+.tema {
+  grid-area: 1/2/2/3;
+  text-align: center;
+}
+.button {
+  background-color: var(--b-color);
+  height: 35px;
+  font-size: 11pt;
+  border-radius: 9px;
+  color: var(--t-b-color);
+  margin-top: 5%;
+  text-align: center;
+}
+
+/* Главная */
+.z{
+  font-family: book antiqua;
+  font-size: 21pt;
+  margin-top: 0.3%;
+}
+.z_1 {
+  font-family: book antiqua;
+  margin-left: 11%;
+  margin-top: 9%;
+}
+.one_glav {
+  margin: 1% 9% 0% 9%;
+  /*max-width: 95ch;*/
+}
+.kartiny_glav {
+  float: right;
+  margin: 3% 11% 1% 3%;
+  width: 25%;
+  text-align: center;
+}
+.kar_glav {
+  width: 100%;
+  border-radius: 5px;
+}
+.podpis_glav {
+  font-family: cursive;
+  font-size: 14pt;
+}
+.text_glav {
+  text-align: justify;
+  font-family: candara;
+  font-size: 15pt;
+  margin: 1% 2% 0% 4%;
+}
+.spiski {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-family: candara;
+  font-size: 15pt;
+  margin: 1% 2% 0% 4%;
+}
+.osob {
+  grid-area: 1/1/2/2;
+}
+.hud {
+  grid-area: 1/2/2/3;
+  margin-left: 25%;
+}
+.ol_glav {
+  margin: 0px;
+}
+li {
+  font-family: candara;
+  font-size: 15pt;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+
+/* Футуризм */
+.one_f {
+  display: grid;
+  grid-template-columns: 71% 29%;
+  margin: 1% 9% 0% 9%;
+}
+.kar_l {
+  grid-area: 1/2/2/3;
+  width: 55%;
+  height: auto;
+  border-radius: 3px;
+  margin: 5% 0% 0% 11%;
+  border: solid black 3px;
+}
+.text_f {
+  margin: 1% 0% 0% 11%;
+  text-align: justify;
+  font-family: candara;
+  font-size: 15pt;
+}
+ol {
+  margin-left: 11%;
+  margin-right: 5%;
+}
+.z_f {
+  font-family: book antiqua;
+  margin-left: 12%;
+  margin-top: 4%;
+}
+.hud_f  {
+  font-family: book antiqua;
+  margin-left: 14%;
+  margin-top: 7%;
+}
+.rab_f_one {
+  width: 25%;
+  margin-top: 3%;
+  margin-right: 21%;
+  text-align: center;
+  float: right;
+}
+.rab_f_two {
+  width: 25%;
+  margin: 3% 0% 0% 21%;
+  text-align: center;
+}
+.rab_f {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.bor {
+  border: solid black 1px;
+}
+/* Медиа-запросы */
+@media (max-width: 1024px) {
+  .kartiny_glav {
+    width: 39%;
+  }
+  .one_f {
+    grid-template-columns: 61% 39%;
+  }
+  .kar_l {
+    width: 71%;
+  }
+  nav {
+    gap: 3rem;
+    font-size: 1.4rem;
+  }
+  .rab_f_one {
+    margin: 3% 14.5% 0% 0%;
+    width: 34%;
+  }
+  .rab_f_two {
+    margin: 3% 0% 0% 14.5%;
+    width: 34%;
+  }
+}
+/* меньше или равно 768px */
+@media (max-width: 768px) {
+  nav {
+    gap: 1.3rem;
+    font-size: 1.2rem;
+  }
+  .g {
+    grid-template-columns: 83% 17%;
+  }
+  .spiski {
+    display: block;
+  }
+  .hud {
+    margin-left: 0%;
+    margin-top: 7%;
+  }
+  .kartiny_glav {
+    width: 66%;
+    float: none;
+    margin-left: 17%;
+    margin-bottom: 5%;
+  }
+  .one_f {
+    display: block;
+  }
+  .kar_l {
+    width: 44%;
+    margin: 1% 0% 1% 28%;
+  }
+  .text_f {
+    max-width: 100%;
+    margin: 1% 8% 0% 8%;
+  }
+  .rab_f_one {
+    float: none;
+    width: 58%;
+    margin-left: 21%;
+  }
+  .rab_f_two {
+    width: 58%;
+    margin-left: 21%;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    gap: 1rem;
+    font-size: 1.2rem;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(2, min-content);
+    letter-spacing: 0px;
+  }
+  .g {
+    grid-template-columns: 77% 23%;
+  }
+  li {
+    font-size: 14pt;
+  }
+  .z {
+    font-size: 18pt;
+  }
+  .one_f {
+    margin-top: 5%;
+  }
+  .text_f {
+    margin: 1% 3% 0% 1%;
+  }
+  .z_1, .z_f, .hud_f {
+    font-size: 16pt;
+  }
+  .kar_l {
+    width: 58%;
+    margin: 1% 0% 1% 21%;
+  }
+  .rab_f_one {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .rab_f_two {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
