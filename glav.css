@@ -182,6 +182,11 @@ ol {
   border: solid black 1px;
 }
 /* Медиа-запросы */
+@media handheld {
+  .text_f {
+    color: green;
+  }
+}
 @media (max-width: 1024px) {
   .kartiny_glav {
     width: 39%;
