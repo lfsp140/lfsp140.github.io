@@ -85,7 +85,7 @@ nav {
 .kartiny_glav {
   float: right;
   margin: 3% 11% 1% 3%;
-  width: 25%;
+  width: 23%;
   text-align: center;
 }
 .kar_glav {
@@ -186,6 +186,9 @@ ol {
   .kartiny_glav {
     width: 39%;
   }
+  .podpis_glav {
+    font-size: 13.5pt;
+  }
   .one_f {
     grid-template-columns: 61% 39%;
   }
@@ -222,10 +225,13 @@ ol {
     margin-top: 7%;
   }
   .kartiny_glav {
-    width: 66%;
+    width: 62%;
     float: none;
-    margin-left: 17%;
+    margin-left: 19%;
     margin-bottom: 5%;
+  }
+  .podpis_glav {
+    font-size: 13pt;
   }
   .one_f {
     display: block;
